@@ -2,29 +2,65 @@
     <head>
         <title></title>
         <style>
-            .box{
-                width: 200px;
-                height: 200px;
-                background: blue;
-                margin: auto;
-                animation-name: sumit;
-                animation-duration: 10s;
-                animation-timing-function: linear;
-                
+            .common{
+                width: 100px;
+                height: 100px;
+                border-radius: 100px;
+                display: inline-block;
+                animation-name: xyz;
+                animation-duration: 0.5s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in;
+                animation-direction: alternate;
             }
-
-            @keyframes sumit{
+            .b1{
+                background: red;
+                animation-delay: 0.1s;
+            }
+            .b2{
+                background: blue;
+                animation-delay: 0.2s;
+            }
+            .b3{
+                background: yellowgreen;
+                animation-delay: 0.3s;
+            }
+            .b4{
+                background: violet;
+                animation-delay: 0.4s;
+            }
+            .b5{
+                background: darkgreen;
+                animation-delay: 0.5s;
+            }
+            .b6{
+                background: pink;
+                animation-delay: 0.6s;
+            }
+            .b7{
+                background: black;
+                animation-delay: 0.7s;
+            }
+            @keyframes xyz{
                 0%{
-                    transform: rotateZ(0deg);
+                    transform:translateY(0px);
                 }
-
                 100%{
-                    transform: rotateZ(360deg);
+                    transform:translateY(500px);
                 }
             }
         </style>
     </head>
     <body>
-        <div class="box"></div>
+        <div class="common b1"></div>
+        <div class="common b2"></div>
+        <div class="common b3"></div>
+        <div class="common b4"></div>
+        <div class="common b5"></div>
+        <div class="common b6"></div>
+        <div class="common b7"></div>
+
+
+    </body>
     </body>
 </html>
